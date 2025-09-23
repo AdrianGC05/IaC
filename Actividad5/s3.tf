@@ -3,7 +3,7 @@ resource "random_id" "bucket_suffix" {
 }
 
 resource "aws_s3_bucket" "adri_gera_bucket" {
-    bucket = "adri_gera_bucket-${random_id.bucket_suffix.hex}"
+    bucket = "adri-gera-bucket-${random_id.bucket_suffix.hex}"
 }
 
 output "bucket_name" {
